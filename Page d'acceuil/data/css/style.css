@@ -1,0 +1,370 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.header_content {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-image: url(../img/slot.jpeg);
+    justify-content: center;
+    z-index: 100;
+}
+.texture {
+    background-color: rgba(0, 0, 0, 0.568);
+    margin-top: 3.2%;
+    width: 100%;
+    height: 83%;
+    position: absolute;
+    z-index: 1;
+}
+.navigation_bar {
+    width: 100%;
+    height: 65px;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 100;
+}
+.menu_title {
+    width: 15%;
+    height: 65px;
+    margin-left: 5%;
+    z-index: 100;
+}
+.menu_title h1 {
+    font-size: 28px;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    z-index: 100;
+}
+
+
+.menu_link {
+    width: 45%;
+    height: 61px;
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.menu_link a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+    z-index: 100;
+    transition: .8s;
+}
+/*
+.menu_link a::after {
+    content: '';
+    height: 0px;
+    background-color: rgb(236, 0, 0);
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    z-index: 1;
+}*/
+
+.menu_link a:hover {
+    color: black;
+    animation: hoverA 2s linear infinite;
+    background-color: rgb(194, 194, 194);
+    border-bottom: solid 4px rgb(138, 0, 0);
+}
+
+@keyframes hoverA {
+    from{
+        background-position: 0 0px;
+    }
+    50%{
+        background-position: 0 100px;
+    }
+    to{
+        background-position: 0 0px;
+    }
+}
+
+.menu_link a:hover::after {
+    color: black;
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+
+
+
+.slogan{
+    width: 100%;
+    margin: -10% 0 0 3%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    z-index: 100;
+}
+.slogan_header {
+    height: 250px;
+    margin: -25% 0 0 42%;
+    border-radius: 8px;
+    background-image: url(../img/JS-Logo-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.slogan_title{
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+.slogan_title h1{
+    margin: -2% 0 0 0;
+    color: white;
+    font-size: 52px;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    z-index: 100;
+}
+
+.sphere {
+    width: 85px;
+    height: 85px;
+    background-color: #fff;
+    filter: blur(30px);
+    border-radius: 50%;
+    z-index: 100;
+    transition: .7s;
+    margin: 0 0 0 0%;
+    animation: phareGauche 3s linear infinite;
+}
+@keyframes phareGauche {
+    from{opacity: 0}
+    25%{opacity: 1}
+    50%{opacity: 1}
+    75%{opacity: 1}
+    to{opacity: 0}
+}
+
+.facebook_color {
+    width: 70px;
+    height: 70px;
+    margin: 30px 0 0 5px;
+    text-align: center;
+    z-index: 100;
+    transition: .7s;
+}
+.facebook_color:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+.playstore_color {
+    width: 58px;
+    height: 60px;
+    margin: 10px 0 0 6px;
+    text-align: center;
+    z-index: 100;
+    transition: .7s;
+    background-color: rgb(39, 39, 39);
+    padding: 5px;
+    border-radius: 50%;
+}
+.playstore_color:hover {
+    cursor: pointer;
+    transform: rotate(-360deg);
+}
+
+.itunes_color {
+    width: 58px;
+    height: 60px;
+    margin: 10px 0 0 6px;
+    text-align: center;
+    z-index: 100;
+    transition: .7s;
+    background-color: rgb(39, 39, 39);
+    padding: 5px;
+    border-radius: 50%; 
+}
+.itunes_color:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.JIABY{
+    display: flex;
+    flex-flow: row;
+    z-index: 100;
+    margin: 25.4% 0 0 -20.1%;
+    position: absolute;
+}
+.JIABY_2{
+    display: flex;
+    flex-flow: row;
+    z-index: 100;
+    margin: 25.4% 0 0 -13.5%;
+    position: absolute;
+}
+.JIABY_3{
+    display: flex;
+    flex-flow: row;
+    z-index: 100;
+    margin: 25.4% 0 0 17%;
+    position: absolute;
+}
+.JIABY_4{
+    display: flex;
+    flex-flow: row;
+    z-index: 100;
+    margin: 25.4% 0 0 24%;
+    position: absolute;
+}
+
+.nav_link {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    position: absolute;
+    margin: -5% 0 0 20%;
+    z-index: 100;
+    justify-content: space-around;
+}
+.nav_link_inside img {
+    margin: 0 20px;
+}
+
+.right_link{
+    width: .3%;
+    height: 300px;
+    background-color: rgb(182, 182, 182);
+    position: absolute;
+    top: 30%;
+    right: 0;
+    z-index: 100;
+    animation: tranS 5s linear infinite;
+    border-radius: 30px 0 0 30px;
+    transition: .7s;
+    overflow: hidden;
+}
+.right_link:hover {
+    width: 4%;
+    height: 300px;
+    border-radius: 70px 0 70px 0;
+}
+@keyframes tranS {
+    from{background-color: rgb(226, 226, 226);}
+    50%{background-color: rgb(119, 128, 134);}
+    to{background-color: rgb(226, 226, 226);}
+}
+
+.left_link{
+    width: .3%;
+    height: 300px;
+    background-color: rgb(182, 182, 182);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: 100;
+    animation: tranS 5s linear infinite;
+    border-radius: 30px 0 0 30px;
+    transition: .7s;
+    overflow: hidden;
+}
+.left_link:hover {
+    width: 4%;
+    height: 300px;
+    border-radius: 0 70px 0 70px;
+}
+.github_color {
+    width: 70px;
+    height: 70px;
+    margin: 30px 0 0 5px;
+    text-align: center;
+    z-index: 100;
+    transition: .7s;
+}
+.github_color:hover {
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    margin-top: -10%;
+}
+.snap_color {
+    width: 70px;
+    height: 70px;
+    margin: 30px 0 0 5px;
+    text-align: center;
+    z-index: 100;
+    transition: .7s;
+}
+.snap_color:hover {
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    margin-top: -10%;
+}
+.instagram_color {
+    width: 70px;
+    height: 70px;
+    margin: 30px 0 0 5px;
+    text-align: center;
+    z-index: 100;
+    transition: .7s;
+}
+.instagram_color:hover {
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    margin-top: -10%;
+}
+.twitter_color {
+    width: 70px;
+    height: 70px;
+    margin: 30px 0 0 5px;
+    text-align: center;
+    z-index: 100;
+    transition: .7s;
+}
+.twitter_color:hover {
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    margin-top: -10%;
+}
+/*
+.sphere {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 100;
+    transition: .7s;
+    margin: 0 0 0 0%;
+}
+
+.sphere:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 100;
+}
+.facebook {
+    font-size: 55px;
+    text-align: center;
+    z-index: 100;
+}
+.JIABY{
+    display: flex;
+    flex-flow: row;
+    z-index: 100;
+}*/
